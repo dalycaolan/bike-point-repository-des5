@@ -1,4 +1,12 @@
-# Bike Point Extraction Project
+<img width="347" height="100" alt="image" src="https://github.com/user-attachments/assets/0d255f67-af05-4745-8a1e-901f709fec73" />
+<br/><br/>
+<img width="262" height="80" alt="image" src="https://github.com/user-attachments/assets/8882d241-b171-4e26-a242-6b48275c2d61" />
+
+
+
+
+
+# Caolan's Bike Point Extraction Project
 
 Hello, welcome to my bike point extraction project. This project aims to extract a snapshot of data of the bikes around London and any particular time and store them as a JSON file.
 
@@ -42,4 +50,4 @@ If we receive a client-side error, i.e. 3XX or 4XX, then we end the script and r
 
 ### 4. Error Handling and Logging
 
-Ideally we can account for any potential points of failure for our extraction. Using the logs Python package we can create a log of how our script executes. We create a logs folder if it doesn't already exist, and set up info, warning and error messages where appropriate.
+Ideally we can account for any potential points of failure for our extraction. Using the logs Python package we can create a log of how our script executes. We create a logs folder if it doesn't already exist, and set up info, warning and error messages where appropriate. The log package has an established hierarchy of importance for messages, so errors will be treated with highest priority, warnings with less priority and info with the least priority.
