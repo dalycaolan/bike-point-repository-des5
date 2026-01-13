@@ -27,9 +27,13 @@ for file in list_of_files:
 
 print(upload_files)
 
+# Check jsons exist
+
 if len(upload_files)==0:
     print("Error: List is empty")
 else:
+
+    # For each json, upload to s3 bucket
 
     for json in upload_files:
         json_folder=os.path.join(data_folder,json)
@@ -39,6 +43,9 @@ else:
             ,aws_access_key_id = AWS_ACCESS_KEY
             ,aws_secret_access_key = AWS_SECRET
             )
+        
+        # Make attempt to upload
+
         try:
             s3_client.upload_file(json_folder,BUCKET_NAME,json)
         except boto3.ClientError as e:
